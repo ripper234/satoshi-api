@@ -1,0 +1,39 @@
+{
+  "private": true,
+  "name": "satoshi-api",
+  "version": "1.0.0",
+  "description": "API for the Satoshi app",
+  "main": "index.js",
+  "engines": {
+    "node": ">=6.9"
+  },
+  "neutrino": {
+    "use": [
+      "neutrino-preset-airbnb-base",
+      "neutrino-preset-node"
+    ]
+  },
+  "scripts": {
+    "start": "neutrino start",
+    "build": "neutrino build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ron Gross <ron.gross@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ripper234/satoshi-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ripper234/satoshi-api/issues"
+  },
+  "devDependencies": {
+    "neutrino": "^5.1.1",
+    "neutrino-preset-airbnb-base": "^5.1.0",
+    "neutrino-preset-node": "^5.1.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "homepage": "https://github.com/ripper234/satoshi-api#readme"
+}
