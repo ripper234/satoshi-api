@@ -11,6 +11,8 @@ router.get('/', function (req, res) {
 router.get('/login', function (req, res) {
     res.json({ message: 'You probably want to use HTTP POST' });
 });
-
+router.get('/login', function (req, res) {
+    res.json({ message: 'Not yet implemented' });
+});
 // more routes for our API will happen here
 module.exports = router;
