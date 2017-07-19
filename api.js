@@ -9,7 +9,18 @@ router.get('/', function (req, res) {
     res.json({ message: 'Welcome to Satoshi api server!' });
 });
 router.post('/login', function (req, res) {
-    res.json({ status: 'STATUS_OK' });
+    let nickname = req.body.nickname
+    if (!nickname) {
+        res.status(400).send('Missing nickname');
+    }
+    switch (nickname) {
+        case 'ron':
+        case 'sharon':
+            res.json({ status: 'STATUS_OK' });
+            return;
+    }
+
+    res.json({ statis: 'STATUS_NOT_AUTHORIZED' })
 });
 // more routes for our API will happen here
 module.exports = router;
