@@ -12,9 +12,10 @@ router.post('/login', function (req, res) {
     let nickname = req.body.nickname
     if (!nickname) {
         res.status(400).send('Missing nickname');
+        return;
     }
     switch (nickname) {
-        case 'ron':
+        case 'ripper234':
         case 'sharon':
             res.json({ status: 'STATUS_OK' });
             return;
