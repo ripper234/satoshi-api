@@ -8,9 +8,6 @@ var router = express.Router();              // get an instance of the express Ro
 router.get('/', function (req, res) {
     res.json({ message: 'Welcome to Satoshi api server!' });
 });
-router.get('/login', function (req, res) {
-    res.json({ message: 'You probably want to use HTTP POST' });
-});
 router.post('/login', function (req, res) {
     res.json({ status: 'STATUS_OK' });
 });
